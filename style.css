@@ -32,27 +32,29 @@ footer{
 
 }
 .wave{
+    overflow: hidden;
     width: 100%;
     height: 100px; 
     position: absolute;
     top: -99px;
     left: 0;
-    background-image: url('assets/img/wave.png');
-    background-position: 1440px 129px;
+    background: url('assets/img/wave.png');
+    background-size: 1440px 129px;
     
 }
 .wave1{
     z-index: 10;
     opacity: 1;
     /* animation-delay: 0s; */
-    animation: animateWave 5s linear infinite;
+    animation: animateWave 4s linear infinite;
 }
 @keyframes animateWave {
     0%{
         background-position-x: 1440px;
     }
     100%{
-        background-position-x: 0;
+        background-position-x: 0px;
+
     }
 }
 .wave2{
@@ -72,13 +74,14 @@ footer{
 .wave3{
     z-index: 10;
     opacity: 0.3;
+    bottom: 155px;
     animation: animateWave 3s linear infinite;
 }
 
 .wave4{
     z-index: 9;
     opacity: 0.7;
-    bottom: 155px;
+    bottom: 160px;
     animation: animateWave_2 3s linear infinite;
 } 
 
@@ -87,10 +90,20 @@ footer{
    display: flex;
    gap: 30px;
 }
+
 .fa-brands{
     font-size: 1.7rem;
     color: white;
+    transition: transform 0.9s ;
 }
+.fa-brands:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
 .wave__menu{
    display: flex;
    gap: 40px;
