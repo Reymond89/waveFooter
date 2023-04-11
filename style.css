@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+ 
+}
+.container{
+    /* max-width: 1440px; */
+    /* margin: auto; */
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: #3586ff;
+
+
+}
+.wave{
+    width: 100%;
+    height: 100px; 
+    position: absolute;
+    top: -99px;
+    left: 0;
+    background-image: url('assets/img/wave.png');
+    background-position: 1440px 129px;
+    
+}
+.wave1{
+    z-index: 10;
+    opacity: 1;
+    /* animation-delay: 0s; */
+    animation: animateWave 5s linear infinite;
+}
+@keyframes animateWave {
+    0%{
+        background-position-x: 1440px;
+    }
+    100%{
+        background-position-x: 0;
+    }
+}
+.wave2{
+    z-index: 9;
+    opacity: 0.5;
+    bottom: 155px;
+    animation: animateWave_2 4s linear infinite;
+}
+@keyframes animateWave_2 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1440px;
+    }
+} 
+.wave3{
+    z-index: 10;
+    opacity: 0.3;
+    animation: animateWave 3s linear infinite;
+}
+
+.wave4{
+    z-index: 9;
+    opacity: 0.7;
+    bottom: 155px;
+    animation: animateWave_2 3s linear infinite;
+} 
+
+
+.wave__social{
+   display: flex;
+   gap: 30px;
+}
+.fa-brands{
+    font-size: 1.7rem;
+    color: white;
+}
+.wave__menu{
+   display: flex;
+   gap: 40px;
+}
+.wave__menu li a{
+    font-size: 1.2rem;
+    color: white;
+}
+.wave__text{
+    font-size: 1rem;
+    color: white;
+}
