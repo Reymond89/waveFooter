@@ -91,6 +91,10 @@ footer{
     font-size: 1.7rem;
     color: white;
 }
+.fa-brands:hover{
+    transform: translateY(-10px);
+}
+
 .wave__menu{
    display: flex;
    gap: 40px;
