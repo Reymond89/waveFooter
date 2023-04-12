@@ -38,14 +38,14 @@ footer{
     top: -99px;
     left: 0;
     background-image: url('assets/img/wave.png');
-    background-position: 1440px 129px;
+    background-size: 1440px 129px;
     
 }
 .wave1{
     z-index: 10;
     opacity: 1;
     /* animation-delay: 0s; */
-    animation: animateWave 5s linear infinite;
+    animation: animateWave 4s linear infinite;
 }
 @keyframes animateWave {
     0%{
@@ -78,7 +78,7 @@ footer{
 .wave4{
     z-index: 9;
     opacity: 0.7;
-    bottom: 155px;
+    bottom: 160px;
     animation: animateWave_2 3s linear infinite;
 } 
 
